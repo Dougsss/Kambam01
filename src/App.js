@@ -1,10 +1,20 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Header from "./componets/Header/index";
+import Footer from "./componets/Footer/index";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hello kanban!</h2>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route />
+          <Route />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
